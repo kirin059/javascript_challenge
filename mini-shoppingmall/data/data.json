@@ -36,11 +36,11 @@
             "image": "img/pink_t.png"
         },
         {
-            "type": "tshirt",
-            "gender": "male",
+            "type": "skirt",
+            "gender": "female",
             "size": "large",
             "color": "blue",
-            "image": "img/blue_t.png"
+            "image": "img/blue_s.png"
         },
         {
             "type": "tshirt",
@@ -60,8 +60,8 @@
             "type": "tshirt",
             "gender": "female",
             "size": "large",
-            "color": "pink",
-            "image": "img/pink_t.png"
+            "color": "yellow",
+            "image": "img/yellow_t.png"
         },
         {
             "type": "tshirt",
@@ -81,8 +81,8 @@
             "type": "skirt",
             "gender": "female",
             "size": "large",
-            "color": "yellow",
-            "image": "img/yellow_s.png"
+            "color": "pink",
+            "image": "img/pink_s.png"
         }
     ]
 }
