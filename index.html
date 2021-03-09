@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Video player practice</title>
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+        <link href="index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>My video player</h1>
+            <video src="bear.mp4" poster="poster.png"></video>
+            <div class="control">
+                <!-- 재생버튼 -->
+                <button class="btn" id="play">
+                    <i class="fa fa-play fa-2x"></i>
+                </button>
+
+                <!-- 중지버튼 -->
+                <button class="btn" id="stop">
+                    <i class="fa fa-stop fa-2x"></i>
+                </button>
+
+                <!-- 슬라이드 바를 조정하여 범위 내의 숫자를 선택할 수 있는 입력 필드 -->
+                <input type="range" class="progress" min="0" max="100" step="0.1" value="0" />
+
+                <!-- 경과시간 표시 -->
+                <span id="timestamp">00:00</span>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
