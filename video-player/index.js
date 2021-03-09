@@ -28,20 +28,20 @@ playBtn.addEventListener("click", toggleVideoStatus);
 // play 버튼 누르면 재생, 한번 더 누르면 일시정지
 function updateIcon(e) {
     // console.log(e.target);
-    //     if (video.paused) {
-    //         play.innerHTML = '<i class="fa fa-play fa-2x"></i>';
-    //     } else {
-    //         // 비디오가 중지되는 경우를 제외한 모든 경우(=재생)에 '일시정지'아이콘 들어가기
-    //         play.innerHTML = '<i class="fa fa-pause fa-2x"></i>';
-    //     }
-    // }
-    if (video.played) {
-        play.innerHTML = '<i class="fa fa-pause fa-2x"></i>';
-    } else {
-        // 비디오가 중지되는 경우를 제외한 모든 경우(=재생)에 '일시정지'아이콘 들어가기
+    if (video.paused) {
         play.innerHTML = '<i class="fa fa-play fa-2x"></i>';
+    } else {
+        //         // 비디오가 중지되는 경우를 제외한 모든 경우(=재생)에 '일시정지'아이콘 들어가기
+        play.innerHTML = '<i class="fa fa-pause fa-2x"></i>';
     }
 }
+//if (video.played) {
+//    play.innerHTML = '<i class="fa fa-pause fa-2x"></i>';
+//} else {
+// 비디오가 중지되는 경우를 제외한 모든 경우(=재생)에 '일시정지'아이콘 들어가기
+//    play.innerHTML = '<i class="fa fa-play fa-2x"></i>';
+//}
+//}
 playBtn.addEventListener("click", updateIcon);
 video.addEventListener("click", updateIcon);
 // 아래와 같이 eventListner를 걸어도 동일함
