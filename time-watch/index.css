@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    background-color: teal;
+}
+
+.timeContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.clock {
+    color: #fafafa;
+    font-weight: 900;
+    font-size: 200px;
+}
