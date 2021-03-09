@@ -1,0 +1,80 @@
+@import url("reset.css");
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+#form {
+    padding: 30px;
+    max-width: 500px;
+    max-height: 800px;
+    background-color: #fafafa;
+    border: 1px solid tan;
+    border-radius: 5px;
+    text-align: center;
+}
+h1 {
+    padding-bottom: 10px;
+    color: teal;
+    background-color: #fafafa;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    background-color: #fafafa;
+}
+
+small {
+    visibility: hidden;
+    text-align: left;
+    font-size: small;
+    color: red;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+label {
+    padding: 10px 0;
+    font-weight: 700;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    cursor: text;
+}
+
+#submit {
+    margin: 10px;
+    padding: 5px 10px;
+    color: #fafafa;
+    background-color: teal;
+    border: 1px solid teal;
+    border-radius: 5px;
+    cursor: pointer;
+}
