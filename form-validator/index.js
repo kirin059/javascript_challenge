@@ -18,7 +18,7 @@ const form = document.getElementById("form");
 
 // error 표시 구현 기능(error 메시지 포함)
 function showError(input, message) {
-    //console.log(input.parentElement);
+    console.log(input.parentElement);
     const formControl = input.parentElement;
     formControl.className = "form-control error";
 
