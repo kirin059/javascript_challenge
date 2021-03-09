@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, skyblue, orange);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 350px;
+    height: 70vh;
+    border: 2px solid coral;
+}
+.inputContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+input {
+    width: 90%;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.error {
+    border: 2px solid red;
+}
