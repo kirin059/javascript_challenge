@@ -12,8 +12,8 @@ function loadItems() {
 loadItems()
     .then((items) => {
         // 성공이면, 아래 두 함수를 실행한다
-        displayItems(items);
-        setEventListener(items);
+        displayItems(items);  // item 를 보여주는 함수
+        setEventListener(items); // filtering 해주는 함수
     })
     // 실패하면, console.log로 출력되도록 한다
     .catch(console.log);
@@ -64,6 +64,5 @@ function onButtonClick(e, items) {
     // console.log(filtered);
 
     // 필터링 할 정보가 들어있지 않는 경우를 제외하면(=필터링 할 정보가 들어있으면) displayItems함수를 실행한다
-    // displayItems함수의 인자는 filtered가 들어간다
     displayItems(filtered);
 }
