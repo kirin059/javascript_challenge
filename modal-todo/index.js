@@ -5,3 +5,5 @@ $(document).ready(function() {
         $('.modal_bg').css({ "display" : "block" })
     })
 });
+
+const listContainer = document.querySelector('.list_container');
