@@ -17,7 +17,7 @@ img {
 .prev,
 .next {
     position: absolute; /* 부모태그(.slideshow-container)에 position:relative를 적용하였기에 absolute로 위치 지정 가능(기본 왼쪽 정렬) */
-    top: 45%;
+ top: 45%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
