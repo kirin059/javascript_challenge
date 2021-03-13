@@ -7,3 +7,9 @@ $(document).ready(function() {
 });
 
 const listContainer = document.querySelector('.list_container');
+const input = document.querySelector('.write');
+const btn = document.querySelector('.exit');
+
+btn.addEventListener('click', (e) => {
+console.log(e)
+} )
