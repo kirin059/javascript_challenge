@@ -56,18 +56,34 @@ header {
     align-items: center;
     width: 800px;
     height: 700px;
+    padding: 40px;
     background: #fff;
+}
+
+.h1 {
+    position: absolute;
+    top:0;
+    text-align: center;
+}
+
+.exit {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    color: var(--color-white);
+    background-color:  var(--color-blue);
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
 }
 
 .todo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-}
-
-h1 {
-    margin: 30px;
+    width: 100%;
 }
 
 .write {
@@ -76,12 +92,12 @@ h1 {
     padding: 10px;
     border-radius: 5px;
 }
-.exit {
-    width: 40px;
-    height: 40px;
-    color: var(--color-white);
-    background-color:  var(--color-blue);
-    font-size: 20px;
+
+.btn {
+    padding: 0;
+    background-image: 40px;
     border: none;
-    border-radius: 8px;
+    background: transparent; 
+    font-size: 30px;
+    cursor: pointer;
 }
