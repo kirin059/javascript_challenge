@@ -5,10 +5,10 @@ $(document).ready(function() {
         $('.modal_bg').css({ "display" : "block" })
     })
 });
-
-const listContainer = document.querySelector('.list_container');
-const input = document.querySelector('.write');
-const btn = document.querySelector('.btn');
+l
+const input = document.querySelector('.write'); // input
+const btn = document.querySelector('.btn');  // button
+const listContainer = document.querySelector('.list_container'); // ul
 
 btn.addEventListener('click', (e) => {
     //console.log(e)
@@ -17,4 +17,10 @@ btn.addEventListener('click', (e) => {
     if(txt.length === 0) {
         alert("Write your list first")
     }
+
+    let li = document.createElement('li');
+    li.innerHTML = `${txt} <button class="del">❌<button>`
+     
+    listContainer.appendChild(li);
+    input.value =  '';
 } )

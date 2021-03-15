@@ -10,9 +10,9 @@ body {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    width: 350px;
+    width: 400px;
     height: 70vh;
-    border: 2px solid coral;
+    border: 2px solid rgb(63, 43, 35);
 }
 .inputContainer {
     display: flex;
@@ -20,10 +20,11 @@ body {
     width: 100%;
     padding: 10px;
 }
-input {
+.input {
     width: 90%;
+    height: 30px;
 }
-ul {
+.lists {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
