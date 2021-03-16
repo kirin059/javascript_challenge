@@ -33,7 +33,7 @@ body::after {
 }
 
 body * {
-  z-index: 1;
+  z-index: 1;  /* 검정 배경이 뒤로 깔리도록 */
 }
 
 h1 {
