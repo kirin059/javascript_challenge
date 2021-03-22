@@ -1,4 +1,4 @@
-  
+
 "use strict";
 
 const input = document.querySelector(".input");
@@ -6,16 +6,17 @@ const btn = document.querySelector("button");
 const lists = document.querySelector(".lists");
 
 btn.addEventListener("click", (e) => {
-    //console.log("click");
+    // console.log(e);
     let txt = input.value;
 
     if (txt < 1) {
         input.classList.add("error");
-    } else {
+    }
+    else {
         let li = document.createElement("li");
         li.innerHTML = `${txt} <button class="delBtn">❌</button>`;
 
-        list.appendChild(li);
+        lists.appendChild(li);
 
         input.value = "";
         input.classList.remove("error");
@@ -23,10 +24,13 @@ btn.addEventListener("click", (e) => {
 
     const delBtn = document.querySelectorAll(".delBtn");
 
-    delBtn[delBtn.length - 1].addEventListener("click", (e) => {
-        console.log(e.target.parentElement);
-        list.removeChild(e.target.parentElement);
-    });
+    for (let i = 0; i < delBtn.length; i++) {
+        delBtn[i].addEventListener("click", (e) => {
+            //console.log(e.currentTarget)
+            console.log(e.target.parentElement.parentElement);
+            e.target.parentElement.parentElement.removeChild(e.target.parentElement);
+        });
+    }
 });
 
 input.addEventListener("keypress", (e) => {
