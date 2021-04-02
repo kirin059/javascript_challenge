@@ -1,0 +1,31 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgb(97, 96, 96);
+}
+
+div {
+    padding-top: 20px;
+}
+
+.check-all {
+text-align: center;
+}
+
+.check-all::after {
+    content: "";
+    display: block;
+    width: 400px;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 5px;
+}

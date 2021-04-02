@@ -13,7 +13,7 @@
     background-color: cadetblue;
 }
 
-#form {
+#login_form {
     padding: 30px;
     max-width: 500px;
     max-height: 800px;
@@ -22,7 +22,8 @@
     border-radius: 5px;
     text-align: center;
 }
-h1 {
+
+#login_form h1 {
     padding-bottom: 10px;
     color: teal;
     background-color: #fafafa;
@@ -57,13 +58,13 @@ small {
     visibility: visible;
 }
 
-label {
+.form-control label {
     padding: 10px 0;
     font-weight: 700;
     text-align: left;
 }
 
-input {
+.form-control input {
     width: 100%;
     padding: 5px 0 5px 10px;
     cursor: text;

@@ -1,7 +1,7 @@
 @import url("reset.css");
 
 body {
-    background: linear-gradient(to right, orange, green);
+    background: #dae9f4;
 }
 .container {
     display: flex;
@@ -11,23 +11,29 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
 h1 {
     margin-bottom: 30px;
-    font-size: 40px;
+    color: #1f4e5f;
+    font-size: 45px;
     font-weight: 900;
 }
 video {
-    width: 50%;
-    height: 50%;
+    width: 51%;
+    height: 55%;
     background-color: rgb(37, 37, 37);
     cursor: pointer;
+    border-radius: 10px 10px 0 0 ;
 }
 
 .control {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    background-color: rgb(106, 4, 117);
+    padding: 10px 10px;
+    background-color:#3b8686;
+    border: none;
+    border-radius: 0 0 10px 10px;
     cursor: pointer;
 }
 .btn {
