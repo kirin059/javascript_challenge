@@ -49,5 +49,6 @@ reset.addEventListener("click", (e) => {
 const del = document.querySelector(".del");
 
 del.addEventListener("click", (e) => {
-    current.value = current.value.slice(handleNumber.length, -1);
+    current.value = current.value.slice(btnClick.length, -1);
 });
+
