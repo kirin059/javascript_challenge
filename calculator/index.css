@@ -1,65 +1,77 @@
 * {
-    background: linear-gradient(to right, rgb(252, 6, 121), rgb(240, 117, 154));
     box-sizing: border-box;
-    outline: none;
+    scroll-behavior: smooth;
 }
 
-.calFrame {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+body {
+    background: linear-gradient(to right, rgb(250, 154, 154), rgb(153, 153, 241));
+}
+
+.container {
     margin: 100px auto;
-    padding: 10px;
-    max-width: 400px;
-    width: 30vw;
-    height: 55vh;
-    background: thistle;
-    border: 1px solid black;
-    border-radius: 5px;
+    width: 450px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
-.btnFrame {
-    display: grid;
-    grid-template-columns: repeat(4, 75px);
-    grid-template-rows: repeat(5, 75px);
-    background: thistle;
-}
-
-.btnFrame input {
-    margin: 3px;
-    color: whitesmoke;
-    font-weight: 900;
-    font-size: x-large;
-    cursor: pointer;
-}
-
-.inputFrame {
+.inputValue {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 65px;
-    border: 1px solid black;
+    width: 400px;
+    margin: 10px auto ;
+    padding: 15px 0;
 }
 
-.previous,
-.current {
-    padding: 0 30px;
-    height: 50px;
+.previous, .next {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(206, 206, 76);
     border: none;
-    color: rgb(39, 30, 30);
-    background: rgb(250, 202, 226);
-    text-align: right;
 }
 
 .previous {
-    font-size: 20px;
+    height: 40px;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+    text-align: right;
+    font-weight: 700;
+    font-size: 25px;
 }
 
-.current {
-    font-size: 30px;
+.next {
+    height: 50px;
+    padding: 10px 15px;
+    border-radius: 0 0 5px 5px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.buttonBox {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 80px);
 }
 
 .spanTwo {
     grid-column: span 2;
+}
+
+.number, .clear, .del, .cal, .result{
+    margin: 2px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;    
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.result {
+    background-color: rgb(133, 156, 31);
+}
+
+.cal {
+    background-color: peru;
 }
